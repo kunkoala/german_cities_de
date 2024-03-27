@@ -46,7 +46,7 @@ def city_assign_bundeslandname():
     return city_bundesland
 def main():
     city_bundesland = city_assign_bundeslandname()
-    with open('city_bundesland.json', 'w') as f:
+    with open('city_bundesland.json', 'w', encoding='utf-8') as f:
         json.dump(city_bundesland, f, indent=4, ensure_ascii=False)
     # print(city_bundesland)
 
